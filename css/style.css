@@ -1,43 +1,69 @@
-body {
+html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
-    min-height: 100vh;
+    height: 100%;
 }
 
+
+
+.container, .container-fondo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    padding: 0px!important;
+    margin: 0!important;
+}
+
+.container-tienda{
+
+}
 .container-fondo {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: none;
     background-image: url('../assets/background.png');
     background-size:cover;
     background-attachment: fixed;
     background-position-x: right;
-    height: 100vh;
-}
-
-.container {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "main main main"
-        "footer footer footer";
+    min-height: 100%;
 }
 
 
 /* Header */
 
+
 .navbar {
+    display: grid;
+    grid-area: header;
+    background-color: #683ab7e3;
+    opacity: 75%;
+    backdrop-filter: blur(5px);
+    z-index: 4;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar li:hover{
+    background-color: blueviolet;
+}
+/* .navbar {
     background-color: #683ab7e3;
     backdrop-filter: blur(5px);
     display: grid;
     grid-area: header;
     width: 100%;
-    height: 145px;
     position: fixed;
     z-index: 4;
-}
+} */
 
-.navbar-list {
+/* .navbar-list {
     display: grid;
     margin: 0;
     padding: 0;
@@ -47,33 +73,29 @@ body {
     text-align: center;
     list-style-type: none;
     padding: 4px;
-}
+} */
 
-.navbar-list a {
+.navbar a {
     text-decoration: none;
     color: #f5f5f5;
 }
 
-.li-actual a {
+/*.li-actual a {
     border-bottom: 2px solid #f5f5f5;
     padding: 2px;
-}
+} */
 
 /* Main */
 
 main {
     display: grid;
     grid-area: main;
-    /* height: 100vh; */
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
+    /* height: auto; */
     justify-content: center;
     align-content: center;
-    /* background-color: #f5f5f5; */
-}
-
-.main-index{
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    /* padding-top: 100px; */
 }
 
 /* Cards de Tienda */
@@ -83,7 +105,7 @@ main {
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
-    margin-top: 145px;
+    /* margin-top: 145px; */
 }
 
 .cards {
@@ -93,6 +115,7 @@ main {
     margin: 24px;
     overflow: hidden;
     max-width: 300px;
+    background-color: #f5f5f5;
 }
 
 .cards img {
@@ -112,61 +135,73 @@ main {
 
 /* Card de Index */
 
-.index-cards {
+.card-index{
     display: grid;
-    /* margin-top: 145px;     */
-        place-items: center;
-
-}
-
-.card-houston {
-    background-color: #f5f5f5;
-    opacity: 75%;
-    display: grid;
-    grid-template-columns: 1fr;
-    /* margin-top: 145px; */
-    text-align: center;
-    box-shadow: 2px 2px 4px;
-    border-radius: 16px;
-    /* overflow: hidden; */
+    box-shadow: 4px 4px 8px;
     width: 90%;
     max-width: 400px;
+    border-radius: 16px;
     aspect-ratio: 1 / 1;
-    /* padding: 16px; */
-    margin: 8px;
-    color: #17202A;
+    margin: 18px;
+    overflow: hidden;
+    /* max-width: 300px; */
+    background-color: #f5f5f5;
+    opacity: 75%;
+    place-items: center;
 }
 
-.index-card-top {
+.main-div{
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    place-items: center;
+}
+
+.index-card-top{
     display: grid;
     grid-template-columns: 6fr 8fr;
     align-items: center;
-    text-align: center;
     justify-items: center;
 }
 
-.houston-text {
+.index-card-top img{
+width:80%;
+}
+
+.index-card-top h1{
+    text-align: center;
     color: #683ab7e3;
-    margin: 8px;
+    font-size: 26px;
 }
 
-.card-houston img {
-    display: grid;
-    height: 112px;
+.card-index h3, .card-index p{
+    text-align: center;
+    margin: 2px;
 }
 
-.card-houston h2{
-    margin-left: 8px;
-    margin-right: 8px;
-}
+/* CONTACTO */
 
+.card-contacto{
+    padding: 24px;
+    box-shadow: 4px 4px 8px;
+    border-radius: 16px;
+    grid-auto-rows: auto;
+    margin: 24px;
+    overflow: hidden;
+    max-width: 300px;
+    background-color: #f5f5f5;
+}
 
 
 /* Footer */
 
 footer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-area: footer;
+    /* display: flex;
+    flex-direction: column; */
     width: 100%;
     background-color: #683ab7e3;
     opacity: 75%;
@@ -193,47 +228,53 @@ footer img {
 
 @media (min-width: 768px) {
 
-    .navbar {
+    .main-div{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 12px;
-        height: 32px;
+        place-items: center;
     }
-
-    .navbar-list {
+    /* .navbar-list {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-column-start: 2;
         justify-content: center;
         padding-right: 4px;
-    }
+    } */
 
     .div-cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 64px;
+        /* margin-top: 64px; */
         margin-bottom: 64px;
     }
 
     .index-cards {
+        margin-top: 32px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .card-houston{
-        /* max-width: 400px; */
+        max-width: 400px;
         aspect-ratio: 1 / 1;
     }
 
     /* Footer */
 
-    footer {
-        /* display: grid;
+    footer{
+        display: grid;
         grid-area: footer;
-        grid-template-columns: 1fr 1fr; */
-        display: flex;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .div-footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: 1fr 1fr;
+        /* display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-around; */
         padding: 4px;
         align-items: center;
         /* bottom: 0%; */
@@ -259,7 +300,7 @@ footer img {
     .div-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
+}
 
     .card-houston {
         /* width: 400px; */
