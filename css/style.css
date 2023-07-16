@@ -19,9 +19,6 @@ html, body {
     margin: 0!important;
 }
 
-.container-tienda{
-
-}
 .container-fondo {
     display: grid;
     grid-template-columns: 1fr;
@@ -53,49 +50,21 @@ html, body {
 .navbar li:hover{
     background-color: blueviolet;
 }
-/* .navbar {
-    background-color: #683ab7e3;
-    backdrop-filter: blur(5px);
-    display: grid;
-    grid-area: header;
-    width: 100%;
-    position: fixed;
-    z-index: 4;
-} */
-
-/* .navbar-list {
-    display: grid;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-list li {
-    text-align: center;
-    list-style-type: none;
-    padding: 4px;
-} */
 
 .navbar a {
     text-decoration: none;
     color: #f5f5f5;
 }
 
-/*.li-actual a {
-    border-bottom: 2px solid #f5f5f5;
-    padding: 2px;
-} */
 
 /* Main */
 
 main {
     display: grid;
     grid-area: main;
-    /* grid-template-columns: 1fr;
-    grid-template-rows: 1fr; */
-    /* height: auto; */
     justify-content: center;
     align-content: center;
-    /* padding-top: 100px; */
+
 }
 
 /* Cards de Tienda */
@@ -105,7 +74,6 @@ main {
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
-    /* margin-top: 145px; */
 }
 
 .cards {
@@ -144,7 +112,6 @@ main {
     aspect-ratio: 1 / 1;
     margin: 18px;
     overflow: hidden;
-    /* max-width: 300px; */
     background-color: #f5f5f5;
     opacity: 75%;
     place-items: center;
@@ -200,8 +167,6 @@ width:80%;
 footer {
     display: grid;
     grid-area: footer;
-    /* display: flex;
-    flex-direction: column; */
     width: 100%;
     background-color: #683ab7e3;
     opacity: 75%;
@@ -233,13 +198,6 @@ footer img {
         grid-template-columns: 1fr 1fr;
         place-items: center;
     }
-    /* .navbar-list {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-column-start: 2;
-        justify-content: center;
-        padding-right: 4px;
-    } */
 
     .div-cards {
         display: grid;
@@ -272,12 +230,9 @@ footer img {
         display: grid;
         grid-area: footer;
         grid-template-columns: 1fr 1fr;
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-around; */
+
         padding: 4px;
         align-items: center;
-        /* bottom: 0%; */
     }
 
     footer div a {
@@ -303,7 +258,6 @@ footer img {
 }
 
     .card-houston {
-        /* width: 400px; */
         aspect-ratio: 1 / 1;
     }
 
