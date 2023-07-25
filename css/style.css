@@ -7,15 +7,16 @@
 
 
 
-.container, .container-fondo{
+.container,
+.container-fondo {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-    padding: 0px!important;
-    margin: 0px!important;
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 .container-fondo {
@@ -23,20 +24,21 @@
     grid-template-columns: 1fr;
     background-color: none;
     background-image: url('../assets/background.png');
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     background-position-x: right;
-    height:auto;
+    height: auto;
 }
 
 
 /* Header */
 
-header{
+header {
     position: fixed;
     width: 100%;
     z-index: 4;
 }
+
 .navbar {
     display: grid;
     grid-area: header;
@@ -50,7 +52,7 @@ header{
     text-align: center;
 }
 
-.navbar li:hover{
+.navbar li:hover {
     background-color: blueviolet;
 }
 
@@ -110,7 +112,7 @@ main {
 
 /* Card de Index */
 
-.card-index{
+.card-index {
     display: grid;
     box-shadow: 4px 4px 8px;
     width: 90%;
@@ -124,7 +126,7 @@ main {
     place-items: center;
 }
 
-.main-div{
+.main-div {
     display: grid;
     grid-area: main;
     grid-template-columns: 1fr;
@@ -133,31 +135,32 @@ main {
     place-items: center;
 }
 
-.index-card-top{
+.index-card-top {
     display: grid;
     grid-template-columns: 6fr 8fr;
     align-items: center;
     justify-items: center;
 }
 
-.index-card-top img{
-width:80%;
+.index-card-top img {
+    width: 80%;
 }
 
-.index-card-top h1{
+.index-card-top h1 {
     text-align: center;
     color: #683ab7;
     font-size: 26px;
 }
 
-.card-index h3, .card-index p{
+.card-index h3,
+.card-index p {
     text-align: center;
     margin: 2px;
 }
 
 /* CONTACTO */
 
-.card-contacto{
+.card-contacto {
     padding: 24px;
     box-shadow: 4px 4px 8px;
     border-radius: 16px;
@@ -171,9 +174,8 @@ width:80%;
 
 /* CURSOS */
 
-.cards-cursos{
+.cards-cursos {
     display: grid;
-
     width: 300px;
     height: 420px;
     margin: 24px;
@@ -183,38 +185,39 @@ width:80%;
     overflow: hidden;
     background-color: #f5f5f5;
 }
-.cards-cursos img{
+
+.cards-cursos img {
     aspect-ratio: 1 / 1;
     width: 300px;
 }
 
-.cards-cursos p{
+.cards-cursos p {
     text-align: center;
     align-content: center;
     margin: 2px;
-    }
+}
 
 /* NOSOTROS */
 
-    .div-banner{
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-        margin-top: 64px;
-    }
+.div-banner {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 64px;
+}
 
-    .banner-guitarras{
-        width: 90%;
-    }
+.banner-guitarras {
+    width: 90%;
+}
 
-    .div-banner h3{
-        margin: 12px;
-    }
+.div-banner h3 {
+    margin: 12px;
+}
 
-    .div-banner p{
-        margin: 12px;
-        text-align: center;
-    }
+.div-banner p {
+    margin: 12px;
+    text-align: center;
+}
 
 /* Footer */
 
@@ -246,7 +249,7 @@ footer img {
 
 @media (min-width: 768px) {
 
-    .main-div{
+    .main-div {
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
@@ -265,14 +268,14 @@ footer img {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .card-houston{
+    .card-houston {
         max-width: 400px;
         aspect-ratio: 1 / 1;
     }
 
     /* Footer */
 
-    footer{
+    footer {
         display: grid;
         grid-area: footer;
         grid-template-columns: 1fr 1fr;
@@ -308,7 +311,7 @@ footer img {
     .div-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-}
+    }
 
     .card-houston {
         aspect-ratio: 1 / 1;
