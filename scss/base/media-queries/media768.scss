@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+    .main-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    main {
+        .div-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 24px 0 24px 0;
+        }
+    }
+
+    .card-index {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        aspect-ratio: 1 / 1;
+    }
+
+    footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 4px;
+
+        & a {
+            margin: 16px;
+        }
+    }
+}

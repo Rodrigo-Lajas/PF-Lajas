@@ -1,0 +1,19 @@
+.div-banner {
+    display: flex;
+    flex-direction: column;
+    place-items: $alineado;
+    margin-top: 64px;
+
+    .banner-guitarras {
+        width: 90%;
+    }
+
+    & h3,
+    & p {
+        margin: $margen;
+    }
+
+    & p {
+        text-align: $alineado;
+    }
+}

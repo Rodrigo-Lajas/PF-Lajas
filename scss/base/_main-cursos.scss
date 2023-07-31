@@ -1,0 +1,22 @@
+.cards-cursos {
+    display: grid;
+    width: 300px;
+    height: 420px;
+    margin: $margen;
+    box-shadow: $sombra;
+    border-radius: 16px;
+    grid-auto-rows: auto;
+    overflow: hidden;
+    background-color: #f5f5f5;
+
+    & img {
+        aspect-ratio: 1 / 1;
+        width: 300px;
+    }
+
+    & p {
+        text-align: $alineado;
+        align-content: $alineado;
+        margin: 2px;
+    }
+}

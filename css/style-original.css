@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+
+.container,
+.container-fondo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.container-fondo {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: none;
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: right;
+    height: auto;
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+.navbar {
+    display: grid;
+    grid-area: header;
+    background-color: #683ab7;
+    backdrop-filter: blur(5px);
+    z-index: 4;
+    position: fixed;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar li:hover {
+    background-color: blueviolet;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+
+/* Main */
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-area: main;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/* Cards de Tienda */
+
+.div-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 64px 0 76px 0;
+    /* min-height: 100vh; */
+}
+
+.cards {
+    box-shadow: 4px 4px 8px;
+    border-radius: 16px;
+    grid-auto-rows: auto;
+    margin: 24px;
+    overflow: hidden;
+    max-width: 300px;
+    background-color: #f5f5f5;
+}
+
+.cards img {
+    display: grid;
+    width: 100%;
+}
+
+.cards h3 {
+    display: grid;
+    text-align: center;
+    color: #f5f5f5;
+    background-color: #683ab7;
+    height: 48px;
+    margin: 0;
+    align-items: center;
+}
+
+/* Card de Index */
+
+.card-index {
+    display: grid;
+    box-shadow: 4px 4px 8px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 16px;
+    aspect-ratio: 1 / 1;
+    margin: 18px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    opacity: 75%;
+    place-items: center;
+}
+
+.main-div {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    place-items: center;
+}
+
+.index-card-top {
+    display: grid;
+    grid-template-columns: 6fr 8fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.index-card-top img {
+    width: 80%;
+}
+
+.index-card-top h1 {
+    text-align: center;
+    color: #683ab7;
+    font-size: 26px;
+}
+
+.card-index h3,
+.card-index p {
+    text-align: center;
+    margin: 2px;
+}
+
+/* CONTACTO */
+
+.card-contacto {
+    padding: 24px;
+    box-shadow: 4px 4px 8px;
+    border-radius: 16px;
+    grid-auto-rows: auto;
+    margin: 96px 24px;
+    max-width: 300px;
+    width: 100vh;
+    background-color: #f5f5f58b;
+    text-align: center;
+}
+
+/* CURSOS */
+
+.cards-cursos {
+    display: grid;
+    width: 300px;
+    height: 420px;
+    margin: 24px;
+    box-shadow: 4px 4px 8px;
+    border-radius: 16px;
+    grid-auto-rows: auto;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.cards-cursos img {
+    aspect-ratio: 1 / 1;
+    width: 300px;
+}
+
+.cards-cursos p {
+    text-align: center;
+    align-content: center;
+    margin: 2px;
+}
+
+/* NOSOTROS */
+
+.div-banner {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 64px;
+}
+
+.banner-guitarras {
+    width: 90%;
+}
+
+.div-banner h3 {
+    margin: 12px;
+}
+
+.div-banner p {
+    margin: 12px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-area: footer;
+    width: 100%;
+    background-color: #683ab7;
+    justify-content: space-around;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+}
+
+footer a,
+footer p {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 0;
+    margin: 8px 0px 8px 0px;
+}
+
+footer img {
+    width: 48px;
+    padding: 8px;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) {
+
+    .main-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .div-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* margin-top: 64px; */
+        margin-bottom: 64px;
+    }
+
+    .index-cards {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-houston {
+        max-width: 400px;
+        aspect-ratio: 1 / 1;
+    }
+
+    /* Footer */
+
+    footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .div-footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: 1fr 1fr;
+
+        padding: 4px;
+        align-items: center;
+    }
+
+    footer div a {
+        margin: 16px;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+
+    /* Navbar */
+
+    .navbar-list li a:hover {
+        border-bottom: 4px solid #f5f5f5;
+        padding: 2px;
+    }
+
+    /* Cards */
+    .div-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-houston {
+        aspect-ratio: 1 / 1;
+    }
+
+    .cards img {
+        transition: scale 250ms;
+        z-index: 2;
+    }
+
+    .cards img:hover {
+        scale: 130%;
+    }
+}

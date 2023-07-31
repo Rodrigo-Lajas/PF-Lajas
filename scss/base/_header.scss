@@ -1,0 +1,19 @@
+.navbar {
+    display: grid;
+    grid-area: header;
+    background-color: $color-principal;
+    z-index: 4;
+
+    & li {
+        text-align: $alineado;
+
+        &:hover {
+            background-color: blueviolet;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $color-texto;
+        }
+    }
+}

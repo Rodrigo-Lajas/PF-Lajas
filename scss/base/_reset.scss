@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container,
+.container-fondo {
+    @include grilla;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.container-fondo {
+    background-color: none;
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: right;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}

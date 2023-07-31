@@ -1,0 +1,43 @@
+.main-div {
+    @include grilla;
+    grid-area: main;
+    grid-template-rows: auto;
+    place-items: center;
+
+    .card-index {
+        display: grid;
+        box-shadow: $sombra;
+        width: 90%;
+        max-width: 300px;
+        border-radius: 16px;
+        aspect-ratio: 1 / 1;
+        margin: $margen;
+        overflow: hidden;
+        background-color: $color-texto;
+        opacity: 75%;
+        place-items: center;
+
+        & h3,
+        & p {
+            text-align: center;
+            margin: 2px;
+        }
+
+        .index-card-top {
+            display: grid;
+            grid-template-columns: 6fr 8fr;
+            align-items: $alineado;
+            justify-items: $alineado;
+
+            & img {
+                width: 80%;
+            }
+
+            & h1 {
+                text-align: $alineado;
+                color: $color-principal;
+                font-size: 26px;
+            }
+        }
+    }
+}

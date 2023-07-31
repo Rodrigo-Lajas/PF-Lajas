@@ -1,0 +1,37 @@
+main {
+    @include grilla;
+    grid-area: main;
+    justify-content: $alineado;
+    align-content: $alineado;
+
+    .div-cards {
+        @include grilla;
+        align-items: $alineado;
+        justify-items: $alineado;
+
+        .cards {
+            box-shadow: $sombra;
+            border-radius: 16px;
+            grid-auto-rows: auto;
+            margin: $margen;
+            overflow: hidden;
+            max-width: 300px;
+            background-color: $color-texto;
+
+            & img {
+                display: grid;
+                width: 100%;
+            }
+
+            & h3 {
+                display: grid;
+                text-align: $alineado;
+                color: $color-texto;
+                background-color: $color-principal;
+                height: 48px;
+                margin: 0;
+                align-items: $alineado;
+            }
+        }
+    }
+}

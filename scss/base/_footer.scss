@@ -1,0 +1,21 @@
+footer {
+    @include grilla;
+    grid-area: footer;
+    width: 100%;
+    background-color: $color-principal;
+    justify-content: space-around;
+    text-align: $alineado;
+
+    & a,
+    & p {
+        color: $color-texto;
+        text-decoration: none;
+        padding: 0;
+        margin: 8px 0px 8px 0px;
+    }
+
+    & img {
+        width: 48px;
+        padding: 8px;
+    }
+}
