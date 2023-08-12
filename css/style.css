@@ -50,13 +50,24 @@ main {
   justify-content: center;
   align-content: center;
 }
-main .div-cards {
+main .banner-tienda {
+  display: flex;
+  width: 100%;
+}
+main h2, main p {
+  color: #683ab7;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.div-cards {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
 }
-main .div-cards .cards {
+.div-cards .cards {
   box-shadow: 4px 4px 8px;
   border-radius: 16px;
   grid-auto-rows: auto;
@@ -65,11 +76,11 @@ main .div-cards .cards {
   max-width: 300px;
   background-color: #f5f5f5;
 }
-main .div-cards .cards img {
+.div-cards .cards img {
   display: grid;
   width: 100%;
 }
-main .div-cards .cards h3 {
+.div-cards .cards h3 {
   display: grid;
   text-align: center;
   color: #f5f5f5;
@@ -89,8 +100,8 @@ main .div-cards .cards h3 {
 .main-div .card-index {
   display: grid;
   box-shadow: 4px 4px 8px;
-  width: 90%;
-  max-width: 300px;
+  width: auto;
+  max-width: 400px;
   border-radius: 16px;
   aspect-ratio: 1/1;
   margin: 24px;
@@ -129,6 +140,31 @@ main .div-cards .cards h3 {
   background-color: rgba(245, 245, 245, 0.5450980392);
   text-align: center;
 }
+.card-contacto input {
+  border-radius: 6px;
+  width: 200px;
+}
+.card-contacto textarea {
+  border-radius: 6px;
+  opacity: 60%;
+}
+.card-contacto .boton-enviar {
+  width: 100px;
+  background-color: #683ab7;
+  color: #f5f5f5;
+}
+
+.main-div .div-h3 {
+  background-color: #683ab7;
+  opacity: 70%;
+  margin: 24px;
+  border-radius: 12px;
+}
+.main-div .div-h3 h3 {
+  color: #f5f5f5;
+  text-align: center;
+  margin: 24px;
+}
 
 .cards-cursos {
   display: grid;
@@ -144,6 +180,10 @@ main .div-cards .cards h3 {
 .cards-cursos img {
   aspect-ratio: 1/1;
   width: 300px;
+}
+.cards-cursos h2 {
+  text-align: center;
+  align-content: center;
 }
 .cards-cursos p {
   text-align: center;
@@ -227,6 +267,12 @@ footer img {
   }
   main .div-cards .cards img:hover {
     scale: 130%;
+  }
+  main .main-index .card-index {
+    max-width: 400px;
+  }
+  main .card-contacto {
+    max-width: 400px;
   }
 }
 

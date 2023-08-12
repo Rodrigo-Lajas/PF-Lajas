@@ -7,8 +7,8 @@
     .card-index {
         display: grid;
         box-shadow: $sombra;
-        width: 90%;
-        max-width: 300px;
+        width: auto;
+        max-width: 400px;
         border-radius: 16px;
         aspect-ratio: 1 / 1;
         margin: $margen;

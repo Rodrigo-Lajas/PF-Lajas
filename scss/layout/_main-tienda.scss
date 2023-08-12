@@ -4,6 +4,20 @@ main {
     justify-content: $alineado;
     align-content: $alineado;
 
+    .banner-tienda{
+        display: flex;
+        width: 100%;
+    }
+
+    h2, p{
+        color: $color-principal;
+        text-align:center;
+        font-weight: bold;
+        margin-top: 24px;
+        }
+    }
+    
+
     .div-cards {
         @include grilla;
         align-items: $alineado;
@@ -34,4 +48,3 @@ main {
             }
         }
     }
-}

@@ -4,20 +4,20 @@
 
 @import "./base/reset";
 
-@import "./base/header";
+@import "./layout/header";
 
-@import "./base/main-tienda";
+@import "./layout/main-tienda";
 
-@import "./base/main-index";
+@import "./layout/main-index";
 
-@import "./base/main-contacto";
+@import "./layout/main-contacto";
 
-@import "./base/main-cursos";
+@import "./layout/main-cursos";
 
-@import "./base/main-nosotros";
+@import "./layout/main-nosotros";
 
-@import "./base/footer";
+@import "./layout/footer";
 
-@import "./base/media-queries/media768.scss";
+@import "./media-queries/media768.scss";
 
-@import "./base/media-queries/media1024.scss";
+@import "./media-queries/media1024.scss";

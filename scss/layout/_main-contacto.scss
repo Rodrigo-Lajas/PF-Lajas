@@ -1,0 +1,41 @@
+.card-contacto {
+    padding: 24px;
+    box-shadow: $sombra;
+    border-radius: 16px;
+    grid-auto-rows: auto;
+    margin: $margen;
+    max-width: 300px;
+    width: 100vh;
+    background-color: #f5f5f58b;
+    text-align: $alineado;
+
+    & input {
+        border-radius: 6px;
+        width: 200px;
+    }
+
+    & textarea {
+        border-radius: 6px;
+        opacity: 60%;
+    }
+
+    & .boton-enviar {
+        width: 100px;
+        background-color: $color-principal;
+        color: $color-texto;
+    }
+}
+
+.main-div{
+    .div-h3{
+        background-color: $color-principal;
+        opacity: 70%;
+        margin: $margen;
+        border-radius: 12px;
+        h3{
+            color: $color-texto;
+            text-align: $alineado;
+            margin: $margen;
+        }
+    }
+}

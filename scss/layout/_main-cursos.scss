@@ -14,6 +14,11 @@
         width: 300px;
     }
 
+    & h2{
+        text-align: $alineado;
+        align-content: $alineado;
+    }
+
     & p {
         text-align: $alineado;
         align-content: $alineado;
