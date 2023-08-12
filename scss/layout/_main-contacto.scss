@@ -26,13 +26,14 @@
     }
 }
 
-.main-div{
-    .div-h3{
+.main-div {
+    .div-h3 {
         background-color: $color-principal;
         opacity: 70%;
         margin: $margen;
         border-radius: 12px;
-        h3{
+
+        h3 {
             color: $color-texto;
             text-align: $alineado;
             margin: $margen;
