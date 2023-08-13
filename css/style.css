@@ -54,7 +54,8 @@ main .banner-tienda {
   display: flex;
   width: 100%;
 }
-main h2, main p {
+main h2,
+main p {
   color: #683ab7;
   text-align: center;
   font-weight: bold;
@@ -215,6 +216,8 @@ footer {
   background-color: #683ab7;
   justify-content: space-around;
   text-align: center;
+  position: fixed;
+  bottom: 0;
 }
 footer a, footer p {
   color: #f5f5f5;
